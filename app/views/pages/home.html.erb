@@ -1,2 +1,47 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="container">
+  <h2> hello world</h2>
+</div>
+
+  <div class="panel-wrapper">
+    <div class="panel-container">
+      <div class="panels">
+        <div class="panel panel1">
+          <p>Hey</p>
+          <p>Let's</p>
+          <p>Enjoy</p>
+        </div>
+        <div class="panel panel2">
+          <p>Always</p>
+          <p>Ski</p>
+          <p>Hard</p>
+        </div>
+        <div class="panel panel3">
+          <p>Live</p>
+          <p>The</p>
+          <p>Present</p>
+        </div>
+        <div class="panel panel4">
+          <p>The</p>
+          <p>World</p>
+          <p>It's yours</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+      const panels = document.querySelectorAll('.panel');
+      function toggleOpen() {
+        console.log('Hello');
+        this.classList.toggle('open');
+      }
+      function toggleActive(e) {
+        console.log(e.propertyName);
+        if (e.propertyName.includes('flex')) {
+          this.classList.toggle('open-active');
+        }
+      }
+      panels.forEach(panel => panel.addEventListener('click', toggleOpen));
+      panels.forEach(panel => panel.addEventListener('transitionend', toggleActive));
+    </script>
+
