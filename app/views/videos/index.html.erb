@@ -17,9 +17,9 @@
           <img class="card-img-top" src="https://img.youtube.com/vi/<%= video.url %>/hqdefault.jpg" alt="Card image cap">
           <div class="card-body">
             <h5><%= video.title %></h5>
-            <p><%= video.region %> <%= video.rating %></p>
+            <p><%= video.region %> </p>
             <p> <%= video.created_at %></p>
-            <p> mejor video del </p>
+            <p> <%= video.rating %></p>
           </div>
         </div>
         <%end %>

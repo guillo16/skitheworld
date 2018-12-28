@@ -65,6 +65,14 @@
 .video-container {
   flex-grow: 1;
   text-align: left;
+  a {
+     color: red;
+
+    &:hover {
+    text-decoration: none;
+
+  }
+}
 }
 
 .card {
@@ -74,14 +82,7 @@
   background-color: #F4F4F4;
   border-radius: 4px;
   margin-right: 20px;
-  a {
-     color: red;
 
-    &:hover {
-    text-decoration: none;
-
-  }
-}
 }
 
 .card-img-top {
@@ -101,7 +102,14 @@
   }
 
   p {
-color: grey;
+   color: grey;
    font-size: 1.3rem;
+   margin-top: 0px;
+   line-height: 8px;
+   word-spacing: 1px;
   }
+
+
+
+
 }
