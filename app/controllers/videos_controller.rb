@@ -6,13 +6,7 @@ class VideosController < ApplicationController
   end
 
   def show
-  @video = Video.find(params[:video_id])
-  end
-
-  private
-
-  def set_videos
-
+   @video = Video.find(params[:video_id])
   end
 
 end
