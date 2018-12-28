@@ -1,17 +1,115 @@
-.card {
-  height: 175px;
-  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
-  background-size: cover !important;
-  background-position: center;
-  color: white;
-  position: relative;
-  margin-bottom: 25px;
+.main-container {
+  display: flex;
+  h1 {
+  text-align: center;
   border: solid;
-  border-color: black;
-  border-radius: 0 0 4px 4px;
-  border:0;
-  box-shadow: 2px 2px 4px black;
-  &:hover {
-    opacity: 0.8;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  color: black;
   }
+}
+#list {
+  flex: 0 0 200px;
+  height: 100%;
+  position: sticky !important;
+  top: 0 !important;
+  border: solid;
+  border-left: 0;
+  border-top: 0;
+  border-bottom: 0;
+  border-right: 2px;
+  font-size: 20px;
+  margin-right: 20px;
+  padding-left: 7px;
+  background-color: #fafafa;
+  color: black;
+  min-height: 100vh;
+
+  a {
+    color: black;
+    padding: 4px;
+    margin-left: 0px;
+  }
+
+  a:hover {
+    color: grey;
+    text-decoration: none;
+
+  }
+  h5 {
+    font-size: 20px;
+    margin-left: 15px;
+  }
+
+  h3 {
+    text-align: left;
+    margin-left: 4px;
+    font-size: 25px;
+    color: #19647e;
+  }
+
+  ul {
+    list-style-type:none;
+  }
+}
+
+#video-index{
+  margin: 0;
+
+}
+
+
+
+
+.video-container {
+  flex-grow: 1;
+  text-align: left;
+  a {
+     color: red;
+
+    &:hover {
+    text-decoration: none;
+
+  }
+}
+}
+
+.card {
+  position: relative;
+  width: 300px;
+  margin-top: 20px;
+  background-color: #F4F4F4;
+  border-radius: 4px;
+  margin-right: 20px;
+
+}
+
+.card-img-top {
+
+  width: 210px;
+  height: 118px;
+}
+
+.card-body {
+
+ h5 {
+  color: black;
+  font-size: 14px;
+  font-weight: bold;
+  margin-left: 0;
+
+  }
+
+  p {
+   color: grey;
+   font-size: 1.3rem;
+   margin-top: 0px;
+   line-height: 8px;
+   word-spacing: 1px;
+  }
+
+
+
+
 }
