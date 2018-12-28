@@ -1,0 +1,12 @@
+
+
+<div class="container">
+  <% @videos.each do |video|  %>
+  <%= link_to video_path(video) do %>
+  <%= video.url %>
+  <%= video.title %>
+
+  <%end %>
+  <%end %>
+
+</div>
