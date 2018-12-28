@@ -1,13 +1,25 @@
+<div class="main-container">
 
 
-<div class="container">
+
+
+
+<div class="row">
   <% @videos.each do |video|  %>
+
   <%= link_to video_path(video) do %>
-
-<div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url( 'https://img.youtube.com/vi/<%= video.url %>/hqdefault.jpg')">
-  <%= video.title %>
-
+  <div class="col-xs-12 col-sm-4 card-outline">
+    <div class="card" style="width: 300px;">
+      <img class="card-img-top" src="https://img.youtube.com/vi/<%= video.url %>/hqdefault.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h5><%= video.title %></h5>
+        <p><%= video.region %> <%= video.rating %></p>
+        <p> <%= video.created_at %></p>
+      </div>
+    <%end %>
+  </div>
   <%end %>
-  <%end %>
+</div>
+</div>
 
 </div>
