@@ -54,10 +54,11 @@
   }
 }
 
+#video-index{
+  margin: 0;
 
-.card-container {
-  flex-grow: 1;
 }
+
 
 
 
@@ -67,10 +68,12 @@
 }
 
 .card {
+  position: relative;
   width: 300px;
   margin-top: 20px;
-  background-color: white;
+  background-color: #F4F4F4;
   border-radius: 4px;
+  margin-right: 20px;
   a {
      color: red;
 
@@ -83,8 +86,8 @@
 
 .card-img-top {
 
-  width: 300px;
-  height: 200px;
+  width: 210px;
+  height: 118px;
 }
 
 .card-body {

@@ -1,33 +1,30 @@
 <div class="main-container">
   <div id="list">
-   <h5><%= link_to videos_path do %>
+    <h5><%= link_to videos_path do %>
      <i class="fas fa-home"></i> Home
      <%end %></h5>
 
      <h3> filters</h3>
 
-    </div>
-
-
-
-
-<div class="video-container">
-<div class="row">
-  <% @videos.each do |video|  %>
-
-  <%= link_to video_path(video) do %>
-  <div class="col-xs-12 col-sm-4 card-outline">
-    <div class="card" style="width: 300px;">
-      <img class="card-img-top" src="https://img.youtube.com/vi/<%= video.url %>/hqdefault.jpg" alt="Card image cap">
-      <div class="card-body">
-        <h5><%= video.title %></h5>
-        <p><%= video.region %> <%= video.rating %></p>
-        <p> <%= video.created_at %></p>
-      </div>
-    <%end %>
   </div>
-  <%end %>
-</div>
-</div>
-</div>
+
+  <div class="video-container">
+    <div class="row" id="video-index">
+      <% @videos.each do |video|  %>
+      <div class="col-xs-12 col-sm-6 col-md-3">
+        <%= link_to video_path(video) do %>
+        <div class="card" style="width: 210px;">
+          <img class="card-img-top" src="https://img.youtube.com/vi/<%= video.url %>/hqdefault.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5><%= video.title %></h5>
+            <p><%= video.region %> <%= video.rating %></p>
+            <p> <%= video.created_at %></p>
+            <p> mejor video del </p>
+          </div>
+        </div>
+        <%end %>
+      </div>
+      <%end %>
+    </div>
+  </div>
 </div>
