@@ -1,9 +1,17 @@
 <div class="main-container">
+  <div id="list">
+   <h5><%= link_to videos_path do %>
+     <i class="fas fa-home"></i> Home
+     <%end %></h5>
+
+     <h3> filters</h3>
+
+    </div>
 
 
 
 
-
+<div class="video-container">
 <div class="row">
   <% @videos.each do |video|  %>
 
@@ -21,5 +29,5 @@
   <%end %>
 </div>
 </div>
-
+</div>
 </div>
