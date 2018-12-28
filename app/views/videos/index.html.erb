@@ -3,7 +3,8 @@
 <div class="container">
   <% @videos.each do |video|  %>
   <%= link_to video_path(video) do %>
-  <%= video.url %>
+
+<div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url( 'https://img.youtube.com/vi/<%= video.url %>/hqdefault.jpg')">
   <%= video.title %>
 
   <%end %>

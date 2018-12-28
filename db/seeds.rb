@@ -9,7 +9,7 @@ puts 'clearing database..'
 Video.destroy_all
 puts 'creating videos..'
 
-Video.create!(title: "GoPro Snow: Jesper Tjäder's Forest", url: "https://youtu.be/cXYep0_5qOY", region: "europe", rating: 3)
-Video.create!(title: "GoPro: Tanner Hall Ski Diaries 2", url: "https://youtu.be/g0FMrjsYAzc", region: "usa", rating: 5)
+Video.create!(title: "GoPro Snow: Jesper Tjäder's Forest", url: "cXYep0_5qOY", region: "europe", rating: 3)
+Video.create!(title: "POV Series #1 | The Faction Collective", url: "04BLJTgy5GI", region: "usa", rating: 5)
 
 puts 'finished.'
