@@ -10,15 +10,15 @@
       <button class= "btn btn-primary">Piste</button>
       <button class= "btn btn-primary">Back-mountain</button>
   </div>
-  <div class="main-container">
+   <div class="main-ski-container">
     <div class="ski-brand-container">
       <div class="row" id="ski-index">
         <% @skis.each do |ski|  %>
-        <div class="col-sm-offset-6 col-sm-6">
+        <div class="col-xs-12 col-sm-4 col-md-3"">
           <%= link_to ski_path(ski) do %>
-          <div class="card" style="width: 310px;">
-            <img class="card-img-top" src="<%= ski.photo_url %>" alt="Card image cap">
-            <div class="card-body">
+          <div class="card-ski" style="width: 310px;">
+            <img class="card-img-top-ski" src="<%= ski.photo_url %>" alt="Card image cap">
+            <div class="card-body-ski">
               <h5><%= ski.name %></h5>
               <p><%= ski.category %> </p>
               <p><%= ski.brand %> </p>
@@ -29,5 +29,5 @@
         <%end %>
       </div>
     </div>
-  </div>
+   </div>
 </div>

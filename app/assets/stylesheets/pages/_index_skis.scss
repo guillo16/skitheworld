@@ -35,8 +35,9 @@
   }
 }
 
-.main-container {
-  display: flex;
+.main-ski-container {
+
+
     a:hover {
      text-decoration: none;
     }
@@ -44,26 +45,30 @@
 
 
 
+#ski-index {
+margin-left: 100px;
+
+}
 
 
-.card {
+.card-ski {
   position: relative;
   width: 300px;
   margin-top: 20px;
   background-color: #F4F4F4;
   border-radius: 4px;
-  margin-right: 20px;
+
 
 
 }
 
-.card-img-top {
+.card-img-top-ski {
 
-  width: 200px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
 }
 
-.card-body {
+.card-body-ski {
 
 
 
