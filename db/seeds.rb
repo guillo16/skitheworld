@@ -29,6 +29,11 @@ Ski.create!(name: "Head Kore", description: "HEAD’s award-winning KORE series 
   “This ski has no compromises,” commented Adrian Bouthot. “It has a super fun waist width and would be an ideal one ski quiver that excels in a lot of areas.” The Head Kore 99 utilizes the same construction found in the rest of
   the family—lightweight karuba wood, incredibly strong yet thin Graphene, rockered tips and tails with camber underfoot—but in a waist width that’s dreamy in a few inches of fresh or the chopped up crud from last week’s storm", brand: "Head", photo_url: "https://s22867.pcdn.co/wp-content/uploads/2018/09/JSK_MASTERBLASTER-RIVER_ProductPage_Final-04.jpg", category: "All-mountain",
   price: "699", url: "blizzard-rustler-11#image=122272/511292/blizzard-rustler-11-skis-2018-164.jpg")
+Ski.create!(name: "Line Sakana", description: "Spawned from the same DNA as the powder proven Pescado, the all-new Line Skis Sakana Skis bring the same directional, swallowtail creativity to a much more versatile 105mm waist width. Designed by the creative mind of Eric Pollard, the Sakana's wide forebody, directional flex and knocked out tail combine to create a ski that encourages a wide variety of turn shapes.
+ Rediscover the euphoria of laying into carves—both on-and-off piste—with the playful, pioneering Line Sakana Skis. The revolution is here, don't get left behind.", brand: "Line", photo_url: "https://images.evo.com/imgp/700/138259/567842/line-skis-sakana-skis-2019-174.jpg", category: "All-Mountain",
+  price: "800", url: "line-sakana#image=138259/567842/line-skis-sakana-skis-2019-174.jpg")
+Ski.create!(name: "Armada Tracer 108", description: "hola", brand: "Armada", photo_url: "https://www.skimag.com/.image/t_share/MTQ5NjU1NzQwNzE2NDI3MDY2/1718_ski_armada_tracer_108_promo_preview.jpg", category: "All-Mountain",
+  price: "699", url: "armada-tracer-108#image=140313/580382/armada-tracer-108-skis-2019-164.jpg")
 
 
 puts 'finished.'
