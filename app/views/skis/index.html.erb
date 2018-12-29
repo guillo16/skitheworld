@@ -1,11 +1,33 @@
 <div class="container">
-  <% @skis.each do |ski|  %>
-  <%= link_to ski_path(ski) do %>
-
-   <img src="<%= ski.photo_url %>" alt="">
-   <%= ski.name %>
-   <%= ski.description %>
-
-  <%end %>
-<%end  %>
+  <div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.1) 0%, rgba(0,36,61,0.1) 50%), url('https://thumb.grindnetworks.com/B1FWrh3WcFnOoio_rD_TMO4kP5E=/1920x0/filters:format(jpg):quality(80):max_bytes(500000):sharpen(0.2%2C1%2Cfalse):strip_exif():strip_icc()/aHR0cHM6Ly9jZG4ucG93ZGVyLmNvbS91cGxvYWRzLzIwMTgvMDgvc2tpc29mdGhleWVhci05NzB4NTQ2LmpwZw==');">
+    <div class="banner-content">
+      <h1>Best Skis</h1>
+    </div>
+  </div>
+  <div class="min-navbar">
+     <button class= "btn btn-primary">All-mountain</button>
+      <button class= "btn btn-primary">Powder</button>
+      <button class= "btn btn-primary">Piste</button>
+      <button class= "btn btn-primary">Back-mountain</button>
+  </div>
+  <div class="main-container">
+    <div class="ski-container">
+      <div class="row" id="ski-index">
+        <% @skis.each do |ski|  %>
+        <div class="col-xs-12 col-sm-offset-8 col-sm-8">
+          <%= link_to ski_path(ski) do %>
+          <div class="card" style="width: 310px;">
+            <img class="card-img-top" src="<%= ski.photo_url %>" alt="Card image cap">
+            <div class="card-body">
+              <h5><%= ski.name %></h5>
+              <p><%= ski.category %> </p>
+              <p><%= ski.brand %> </p>
+            </div>
+          </div>
+          <%end %>
+        </div>
+        <%end %>
+      </div>
+    </div>
+  </div>
 </div>
