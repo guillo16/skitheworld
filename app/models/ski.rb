@@ -1,5 +1,5 @@
 class Ski < ApplicationRecord
-  validates :name, precense: true
+  validates :name, presense: true
   validates :description, presence: true
   validates :brand, presence: true
   validates :category, presence: true
