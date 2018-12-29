@@ -1,8 +1,15 @@
 <div class="container">
-
-<img src="<%= @ski.photo_url %>" alt="">
-
-
-<div class="link-ski"><a href="https://www.evo.com/skis/<%= @ski.url %>" target= blank > comprar</a>
+  <div class="ski-wrapper">
+    <div class="ski-container">
+      <img src="<%= @ski.photo_url %>" alt="">
+        <div class="link-ski">
+          <h3> <%= @ski.name %> </h3>
+          <h4><%= @ski.category %> </h4>
+          <p> MSPR:<%= @ski.price %></p>
+          <p><%= @ski.description %></p>
+          <a href="https://www.evo.com/skis/<%= @ski.url %>" target= blank class= 'btn btn-primary'>Buy now</a>
+        </div>
+    </div>
+  </div>
 </div>
-</div>
+
