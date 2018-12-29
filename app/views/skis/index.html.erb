@@ -1,0 +1,11 @@
+<div class="container">
+  <% @skis.each do |ski|  %>
+  <%= link_to ski_path(ski) do %>
+
+   <img src="<%= ski.photo_url %>" alt="">
+   <%= ski.name %>
+   <%= ski.description %>
+
+  <%end %>
+<%end  %>
+</div>

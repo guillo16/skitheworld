@@ -3,7 +3,7 @@ class SkisController < ApplicationController
   before_action :set_skis, only: [:show]
 
   def index
-    @skis = Skis.all
+    @skis = Ski.all
   end
 
   def show
