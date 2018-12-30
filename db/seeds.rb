@@ -8,6 +8,7 @@
 puts 'clearing database..'
 Video.destroy_all
 Ski.destroy_all
+Article.destroy_all
 puts 'creating videos..'
 
 Video.create!(title: "GoPro Snow: Jesper Tjäder's Forest", url: "cXYep0_5qOY", region: "Europe", rating: 3)
@@ -95,6 +96,30 @@ Ski.create!(name: "Völkl 90Eight", description: "The Völkl 90Eight is hot… m
   The end result is a ski that can charge with the best of ’em and isn’t a slouch in the playfulness department, either.
   “These carved trenches around the entire hill,” commented Thomas Lampert. “They were also fun to pop off side hits and ride the tails.” Like we said, these cats are hot.", brand: "Völkl", photo_url: "https://s22867.pcdn.co/wp-content/uploads/2018/09/90Eight.png", category: "All-Mountain", price: "775", url: "volkl-90eight")
 # Ski.create!(name: "", description: "", brand: "", photo_url: "", category: "", price: "", url: "")
+ puts 'creating articles ..'
+Article.create!(title: "Tof Henry Is The Fastest Skier in Chamonix", subtitle: "He straightlines the Alps’ steepest slopes, yet a turbulent life off the hill might be exacerbating his extreme style.",
+ main_article: " Daniel Rönnbäck was standing in the tramline of Chamonix's Aiguille du Midi with the late Andreas Fransson when he first saw Christophe 'Tof' Henry. It was 2012 and Fransson nodded toward the third-generation Chamoniard, whose black mop of hair wisped across his tanned cheeks, and said to Rönnbäck, 'That kid is the next generation of steep skiing. He's the fastest skier in Chamonix.'
+But you wouldn't need a steep skiing legend like Fransson whispering in your ear to notice Henry's swagger. The way he cuts to the front of the tramline with baggy bibs hanging off his broad 6-foot-3-inch frame resembles a high school basketball star waltzing in late to class.
+ Or perhaps you've seen POV videos of him straightlining sheets of blue ice on 50-degree test-piece lines before launching onto variable snow and cranking GS turns on an exposed hanging glacier.
+ Around the Chamonix Valley, where he has lived for all of his 33 years, Henry is known to skip entrance rappels above classic lines like the narrow Col du Plan couloir or the highly coveted Mallory-Porter, a route that plunges 5,000 vertical feet below the Aiguille du Midi cable car. He skis no-fall zones like he's freeriding inbounds and does so on high avalanche days in bad weather with low visibility.
+  And just in case you're unsure if Henry is a big deal, he's ready to let you know. 'I ski top of Mallory in May last year with nine turns,' he says loud enough for anyone on the street to hear it. 'No fucking hop turns!'
+  Elevation 1904 bar just off Chamonix's main square on an April afternoon in baggy jeans and two hoodies, Henry was drinking like he skis—fast and without hesitation. I asked if he ever brings a guide along to handle his photographers or film crews. 'I don't need a guide,' he says. 'I'm better than guide. They ask me where is the good snow.'
+ When pressed on what he's trying to accomplish in his ski career, it might be the easiest question he's ever answered. 'My goal is to ski all the hugest lines you can in Cham in different way and style: fast and big,'he says, his thumping pulse visible in his jugular vein.
+ Despite all of the impassioned chest beating, his connection to the peaks is a source of vitality that calls him on a near-daily pilgrimage. Skirting the thin line between dialed and loose is precisely where Henry feels centered and free. Yet down on the valley floor, his world is weighted with personal woes and an unsettled family dynamic threatening to knock him off-balance.
+ After an hour or two of throwing back beers, recounting his favorite ski lines and dreaming of summer van-life to ski first descents in the Chilean Andes, Henry spotted a blonde rascal with a red bandana around his neck running by on the sidewalk. 'Jules!' Henry called out to his 6-year-old son, who kept on running, babysitter in tow. When the boy passed again, Henry swooped the kicking child up into his lap.
+ The boy squirmed out of his grasp and ran off. For the first time all day, Henry's enduring smile gave way to a troubled face. 'Sometimes he doesn't want to spend time,' he says softly with a long, sad drag on his cigarette.",
+ second_article: "Henry grew up skiing from the age of 2 in Chamonix. His parents were working-class weekend warriors at best, not deeply embedded in the mountain culture so often romanticized in the birthplace of alpinism. He had an unremarkable childhood and a subdued personality until he was 15. That's when he started skiing with fellow Chamoniard Aurélien Ducroz, an eventual two-time Freeride World Champion skier.
+
+'We would freeride together, learning how to use the big wide ski,' Henry says. 'This was the new revolution.' Having such unmatched access to big vertical and long seasons breeds rapid progression in Chamonix, if the motivation is there. And it was, so much so that Henry was too busy skiing to finish high school. By age 20, he was skiing faster than most locals on open freeride terrain, working as a ski instructor and finding summer labor jobs clearing trees and building a zip line and ropes courses—anything to keep him outdoors.
+
+In 2014, tragedy struck the Henry family, when his mother, Francoise, died of leukemia. Soon thereafter, a Christmas dinner ended early after an argument erupted between Henry and his father. The two have not spoken or seen each other since. That left just a few close friends at his wedding in April 2016. A little more than a year later, Henry's wife took Jules, who they had when she was 22 and Henry was 27, and left, for the second time, with another man. Henry, meanwhile, was skiing in Chile for two months. That July, he posted a video on Instagram of him skiing a couloir barely wide enough for his skis with the caption: [sic] 'No more mum no more dad no more love from my wife, missing my son, fortunatly the passion is here and save me…'
+
+When he returned home to face the music last September, he was a wreck, living out of his 2005 Volkswagen Transporter van piled with 25 pairs of skis, and only seeing Jules once a week. His younger sister, Caroline, who had the hard task of breaking the news to Henry about his wife's 'extra conjugal man,' was worried about him. 'Tof wanted to stay at the bar and drink, and I was worried if he'd go to the mountain and maybe not worry about the risk as much,
+' she says as smoke ribbons swirl from her cigarette on the patio of the Chamonix café where she works one of two jobs. 'He thinks he knows everything, but Mother Nature is stronger than him and I am scared that sometimes he forget it. But I know when he feels bad, the skiing and the mountains are his medicine, his therapy.'
+
+Indeed, the day after they buried their mother in the same Chamonix cemetery where centuries of legendary alpinists lay, Henry was skiing off the Midi. But when Henry talks about skiing, it sounds more like a drug than therapy. 'I'm so stoked in the mountains, I always want more,' he says. 'It make you crazy. I get down and I just want more, more, more.'",
+ writer: "Powder Magazine", photo_url: "https://cdn.powder.com/uploads/2018/09/powp-181000-prof-05-640x427.jpg", photo: "https://cdn.powder.com/uploads/2018/09/powp-181000-prof-07-640x480.jpg", second_photo: "https://www.freeride.se/jacobwester/wp-content/uploads/2014/03/com2014_Photo_danielronnback_0016_4994-590x392.jpg")
+# Article.create!(title: "", subtitle: "", main_article: "", second_article: "", writer: "", photo_url: "", photo: "", second_photo: "")
 
 
 puts 'finished.'

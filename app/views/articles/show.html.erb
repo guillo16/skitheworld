@@ -1,0 +1,13 @@
+<div class="article-banner">
+  <img src="<%= @article.photo_url %>" alt="">
+</div>
+<div class="article-container">
+  <h1><%= @article.title %></h1>
+  <h5><%= @article.subtitle %></h5>
+  <h6><%= @article.writer %> || <%= @article.created_at.strftime("%d de %B de %Y") %> </h6>
+  <p><%=  @article.main_article%></p>
+  <img src="<%= @article.photo %> " alt="">
+  <p> <%= @article.second_article %></p>
+  <img src="<%= @article.second_photo %> " alt="">
+  <h2> <%= @article.writer %><%= @article.created_at %> </h2>
+</div>
