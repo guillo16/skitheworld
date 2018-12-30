@@ -5,6 +5,7 @@
   /* if you have a 70px navbar => height: calc(100vh - 70px); */
   background-size: cover !important;
   display: flex;
+  background-position: center;
   // align-items: center;
   justify-content: center;
 
@@ -36,23 +37,17 @@
 }
 
 .main-ski-container {
-
-
-    a:hover {
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  a:hover {
      text-decoration: none;
     }
 }
 
 
-
-#ski-index {
-margin-left: 100px;
-
-}
-
-
 .card-ski {
-  position: relative;
+  // position: relative;
   width: 300px;
   margin-top: 20px;
   background-color: #F4F4F4;
@@ -60,10 +55,12 @@ margin-left: 100px;
 
 
 
+
+
 }
 
 .card-img-top-ski {
-
+  background-position: center;
   width: 250px;
   height: 250px;
 }
