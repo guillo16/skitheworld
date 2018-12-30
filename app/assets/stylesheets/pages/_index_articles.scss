@@ -1,0 +1,60 @@
+.main-article-container {
+ display: flex
+}
+// left content (left)
+.sidebar {
+ flex: 0 0 200px;
+ background-image: url("IMG_article.JPG");
+ background-size: cover;
+ height: 100vh;
+}
+
+//right content (right)
+.messages {
+ flex: 0 0 200px;
+ background-color: black;
+}
+
+// main content (middle)
+
+.articles {
+  flex-grow: 1;
+  height: 100vh;
+  overflow-y: scroll;
+  a {
+  color: black;
+  &:hover {
+    text-decoration: none;
+  }
+ }
+}
+
+.article {
+ display: flex;
+ margin-top: 30px;
+ border-bottom: solid;
+ border-color: lightgrey;
+ margin-left: 20px;
+ margin-right: 20px;
+  img {
+    width: 300px;
+    height: 150px;
+    margin-bottom: 10px;
+  }
+
+
+}
+
+.article-body {
+  margin-left: 10px;
+ h3 {
+  font-size: 20px;
+  margin: 0px;
+  font-weight: bold;
+ }
+ h5 {
+  font-size: 15px;
+  margin-top: 15px;
+
+ }
+}
