@@ -15,7 +15,16 @@
   width: 500px;
   background-size: cover;
  }
+
 }
+
+ @media(max-width: 500px) {
+  .ski-container {
+    display: block;
+  }
+}
+
+
 
 .link-ski {
   background-color: white;
