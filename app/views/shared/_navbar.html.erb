@@ -11,14 +11,10 @@
 
       <!-- Links when logged in -->
         <div class="dropdown">
-          <button class="dropbtn">News <i class="fas fa-angle-down"></i></button>
+          <button class="dropbtn">Articles <i class="fas fa-angle-down"></i></button>
           <div class="dropdown-content">
-          <h5><%= link_to root_path(string: "amoladora") do %>Amoladora<% end %></h5>
-          <h5><%= link_to root_path(string: "grupo electrogeno") do %>Grupo electrogeno<% end %></h5>
-          <h5><%= link_to root_path(string: "martillo") do %>Martillos<% end %></h5>
-          <h5><%= link_to root_path(string: "Motosierra") do %>Motosierra<% end %></h5>
-          <h5><%= link_to root_path(string: "sierra") do %>Sierra<% end %></h5>
-          <h5><%= link_to root_path(string: "taladro") do %>Taladros<% end %></h5>
+          <h5><%= link_to articles_path(string: "amoladora") do %>Articles<% end %></h5>
+          <h5><%= link_to articles_path(string: "grupo electrogeno") do %>News<% end %></h5>
           </div>
         </div>
         <div class="dropdown">
