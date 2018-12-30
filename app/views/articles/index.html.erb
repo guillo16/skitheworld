@@ -1,13 +1,28 @@
+<div class="main-article-container">
+   <div class="sidebar">
+   </div>
+   <div class="articles">
+
+        <% @articles.each do |article| %>
+
+        <%= link_to article_path(article) do %>
+        <div class="article">
+        <img src="<%= article.photo_url %>" alt="">
+
+        <div class="article-body">
+         <h3><%= article.title %></h3>
+         <h5><%= article.subtitle %></h5>
+         </div>
+         </div>
+         <%end%>
+         <%end%>
+      </div>
 
 
-<div class="container">
-  <% @articles.each do |article| %>
-  <%= link_to article_path(article) do %>
-  <img src="<%= article.photo_url %>" alt="">
 
-  <%= article.title %>
-  <%= article.subtitle %>
-  <%= article.writer %>
-  <%end  %>
-<%end  %>
+   <div class="messages">
+   </div>
+
 </div>
+
+
