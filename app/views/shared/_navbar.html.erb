@@ -13,22 +13,24 @@
         <div class="dropdown">
           <button class="dropbtn">Articles <i class="fas fa-angle-down"></i></button>
           <div class="dropdown-content">
-          <h5><%= link_to articles_path(string: "amoladora") do %>Articles<% end %></h5>
-          <h5><%= link_to articles_path(string: "grupo electrogeno") do %>News<% end %></h5>
+          <h5><%= link_to articles_path do %>Articles<% end %></h5>
+          <h5><%= link_to articles_path do %>News<% end %></h5>
           </div>
         </div>
         <div class="dropdown">
           <button class="dropbtn">Gear <i class="fas fa-angle-down"></i></button>
           <div class="dropdown-content">
-            <h5><%= link_to skis_path(brand: "Black_decker") do %>Top Skis<% end %></h5>
+            <h5><%= link_to skis_path do %>Top Skis<% end %></h5>
           </div>
         </div>
         <div class="dropdown">
           <button class="dropbtn">Videos <i class="fas fa-angle-down"></i></button>
           <div class="dropdown-content">
-              <h5> <%= link_to videos_path(min_price_cents: 1, max_price_cents: 300001) do %>
-                Trend<% end %> </h5>
-              <h5><%= link_to "Newest", videos_path(min_price_cents: 300001, max_price_cents: 600000) %> </h5>
+              <h5><%= link_to "All Videos", videos_path %> </h5>
+              <h5><%= link_to videos_path(rating: :desc) do %>
+               Trend<%end %></h5>
+               <h5><%= link_to videos_path(created_at: :desc) do %>
+               Recent<% end %></h5>
           </div>
         </div>
         <div class="dropdown">
