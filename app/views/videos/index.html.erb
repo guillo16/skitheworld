@@ -1,10 +1,79 @@
 <div class="main-container">
   <div id="list">
-    <h5><%= link_to videos_path do %>
-     <i class="fas fa-home"></i> Home
+    <%= link_to videos_path do %>
+     <h2><i class="fas fa-home" style="color:red"></i>Home
+     </h2><%end %>
+    <%= link_to videos_path(rating: :desc) do %>
+     <h5><i class="fas fa-fire"></i>Trend
+     </h5><%end %>
+    <h5><%= link_to videos_path(created_at: :desc) do %>
+      <i class="fas fa-fire"></i>Recent<% end %></h5>
+
+<h3><button id="regionButton" onClick="myRegionFunction(); toggleMarcaText(this.id);">Region -</button></h3>
+  <div id = "marcasDiv">
+
+    <%= link_to videos_path(region: "Usa") do %><h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;United States</h5><% end %>
+    <%= link_to videos_path(region: "Europe") do %><h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Europe</h5><% end %>
+    <%= link_to videos_path(region: "Canada") do %><h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Canada</h5><% end %>
+    <%= link_to videos_path(region: "France") do %><h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;France</h5><% end %>
+    <div style="display:none;" id="myDIV">
+       <%= link_to videos_path(region: "Austria") do %><h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Austria</h5><% end %>
+       <%= link_to videos_path(region: "Argentina") do %><h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Argentina</h5><% end %>
+       <%= link_to videos_path(region: "Italy") do %><h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Italy</h5><% end %>
+       <%= link_to videos_path(region: "New Zeland") do %><h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;New Zeland</h5>
+    </div><% end %>
+      <button id="myButton" onClick="myFunction(); toggleText(this.id);">+ More</button>
+  </div>
+
+ <script>
+           function myRegionFunction() {
+            let b = document.getElementById("marcasDiv");
+            if (b.style.display === "none")
+            {
+              b.style.display = "block";
+            } else {
+              b.style.display = "none";
+            }
+           }
+           function toggleMarcaText(marcaButton) {
+            if (document.getElementById(marcaButton).innerText == "Region -")
+             {
+                 document.getElementById(marcaButton).innerText = "Region +";
+             }
+             else
+             {
+               document.getElementById(marcaButton).innerText = "Region -";
+             }
+           }
+            function myFunction() {
+            var x = document.getElementById("myDIV");
+            if (x.style.display === "none") {
+              x.style.display = "block";
+            } else {
+              x.style.display = "none";
+            }
+          }
+            function toggleText(button_id)  {
+             if (document.getElementById(button_id).innerText == "+ More")
+             {
+                 document.getElementById(button_id).innerText = "- Less";
+             }
+             else
+             {
+               document.getElementById(button_id).innerText = "+ More";
+             }
+          }
+        </script>
+
+     <h6> Library</h6>
+
+     <h5><%= link_to videos_path do %>
+     <i class="fas fa-clock"></i> See Later
+     <%end %></h5>
+     <h5><%= link_to videos_path do %>
+     <i class="fas fa-heart"></i> Favorites
      <%end %></h5>
 
-     <h3> filters</h3>
 
   </div>
 
@@ -18,8 +87,8 @@
           <div class="card-body">
             <h5><%= video.title %></h5>
             <p><%= video.region %> </p>
-            <p> <%= video.created_at %></p>
-            <p> <%= video.rating %></p>
+            <p> <%= video.created_at.strftime("%d de %B de %Y") %></p>
+            <p> <i class="fas fa-thumbs-up"></i>(23) <i class="fas fa-thumbs-down"></i>(3)</p>
           </div>
         </div>
         <%end %>
