@@ -9,5 +9,5 @@
   <img src="<%= @article.photo %> " alt="">
   <p> <%= @article.second_article %></p>
   <img src="<%= @article.second_photo %> " alt="">
-  <h2> <%= @article.writer %><%= @article.created_at %> </h2>
+  <h2> <%= @article.writer %><%= @article.created_at.strftime("%d de %B de %Y") %> </h2>
 </div>
