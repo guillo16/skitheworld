@@ -11,17 +11,46 @@ Ski.destroy_all
 Article.destroy_all
 puts 'creating videos..'
 
-Video.create!(title: "GoPro Snow: Jesper Tjäder's Forest", url: "cXYep0_5qOY", region: "Europe", rating: 3)
-Video.create!(title: "POV Series #1 | The Faction Collective", url: "-4tsX20dPX0", region: "Europe", rating: 5)
-Video.create!(title: "GoPro: Chasing Adventure - Crhis Bentchelter", url: "PNs68O5JSKg", region: "Usa", rating: 5)
-Video.create!(title: "GoPro Ski: Chasing El Niño - ep:2", url: "lZE66YL0V8I", region: "Usa", rating: 5)
-Video.create!(title: "GoPro Ski: Chasing El Niño - ep:3", url: "N5XIWU017kU", region: "Usa", rating: 5)
-Video.create!(title: "GoPro Ski: Chasing El Niño - ep:4", url: "Z1OQbLqtVLE", region: "Usa", rating: 5)
-Video.create!(title: "The Faction Collective Presents: La Grave", url: "QkinG08IoKk", region: "Europe", rating: 5)
-Video.create!(title: "The Faction Collective Presents: British Columbia", url: "k0xxtEqeBog", region: "Europe", rating: 5)
+Video.create!(title: "GoPro Snow: Jesper Tjäder's Forest", url: "cXYep0_5qOY", region: "Austria", rating: 6)
+Video.create!(title: "POV Series #1 | The Faction Collective", url: "-4tsX20dPX0", region: "France", rating: 8)
+Video.create!(title: "GoPro: Chasing Adventure - Crhis Bentchelter", url: "PNs68O5JSKg", region: "Usa", rating: 10)
+Video.create!(title: "GoPro Ski: Chasing El Niño - ep:2", url: "lZE66YL0V8I", region: "Usa", rating: 9)
+Video.create!(title: "GoPro Ski: Chasing El Niño - ep:3", url: "N5XIWU017kU", region: "Usa", rating: 9)
+Video.create!(title: "GoPro Ski: Chasing El Niño - ep:4", url: "Z1OQbLqtVLE", region: "Usa", rating: 9)
+Video.create!(title: "The Faction Collective Presents: La Grave", url: "QkinG08IoKk", region: "France", rating: 8)
+Video.create!(title: "The Faction Collective Presents: British Columbia", url: "k0xxtEqeBog", region: "Canada", rating: 8)
 Video.create!(title: "THIS IS HOME - Duncan Adams: Athlete Edit", url: "MUw2_EbqOgU", region: "Europe", rating: 5)
-Video.create!(title: "THIS IS HOME - Antti Ollila", url: "9Tv99c2tTMw", region: "Europe", rating: 5)
- puts 'creating skis..'
+Video.create!(title: "THIS IS HOME - Antti Ollila", url: "9Tv99c2tTMw", region: "Austria", rating: 5)
+Video.create!(title: "We Are The Faction Collective: Ep02", url: "rGsNEAx7U1I", region: "Usa", rating: 7)
+Video.create!(title: "THIS IS HOME - Utah Segment", url: "q3glYu4IyZI", region: "Usa", rating: 8)
+Video.create!(title: "THIS IS HOME - Extended Cut: Zermatt", url: "u_GnIMxHY7M", region: "Suiza", rating: 8)
+Video.create!(title: "We Are The Faction Collective:Ep01", url: "qp6NV33XAc8", region: "Argentina", rating: 7)
+Video.create!(title: "We Are The Faction Collective:Ep03", url: "MPKdL_E-z7s", region: "Suiza", rating: 7)
+Video.create!(title: "Armada Presents SNOWCIETIES Chamonix", url: "goD_ewMlSj8", region: "France", rating: 8)
+Video.create!(title: "THIS IS HOME - Rough Cut: Finland", url: "Wfwm2P1stK8", region: "Finland", rating: 6)
+Video.create!(title: "Armada Family Profile: Torin Yater-Wallace", url: "vkkiDOSYvRk", region: "Usa", rating: 6)
+Video.create!(title: "GoPro: Tanner Hall Ski Diaries 2", url: "g0FMrjsYAzc", region: "Usa", rating: 8)
+Video.create!(title: "GoPro: Tanner Hall Ski Diaries", url: "N2CWCJJilfk", region: "Usa", rating: 7)
+Video.create!(title: "GoPro Line of the Winter: Léo Taillefer", url: "UYmcm5bKvxk", region: "France", rating: 7)
+Video.create!(title: "GoPro Line of the Winter: Nicolas Falquet", url: "EMVPpPE_Bx4", region: "Suiza", rating: 8)
+Video.create!(title: "Eric Pollard & Line Skis Shred Mt Hood", url: "ivG4ZHt5e4c", region: "Usa", rating: 7)
+Video.create!(title: "Introducing the LINE Sakana by Eric Pollard", url: "wBpbZ1aeWtQ", region: "Usa", rating: 5)
+Video.create!(title: "REJOICE: SAMMY CARLSON", url: "lqdJarUoXow", region: "Usa", rating: 6)
+Video.create!(title: "Few Words Trailer", url: "eL2sCAvM29A", region: "France", rating: 8)
+Video.create!(title: "Candide Kamera Episode 2", url: "BuL7SSP_dH0", region: "France", rating: 7)
+Video.create!(title: "One of those days - Candide Thovex", url: "ygxufRprWpY", region: "France", rating: 10)
+Video.create!(title: "One of those days 2 - Candide Thovex", url: "yKP7jQknGjs", region: "France", rating: 10)
+Video.create!(title: "One of those days 3 - Candide Thovex", url: "R1NagZN2kjY", region: "France", rating: 9)
+Video.create!(title: "Candide Thovex - quattro 2", url: "NHrwcQQ38bA", region: "France", rating: 9)
+Video.create!(title: "Random Shots - Candide Thovex", url: "2aXFPZjCsok", region: "France", rating: 9)
+Video.create!(title: "Few Words - A Candide Thovex Film", url: "cpi2fc5vfNs", region: "France", rating: 9)
+Video.create!(title: "GoPro Ski: Chasing El Niño – Ep. 1 ", url: "hqtDehAtAN8", region: "Usa", rating: 8)
+Video.create!(title: "GoPro: New Zealand Adventure", url: "aRm-JTO70F0", region: "New_Zeland", rating: 9)
+Video.create!(title: "GoPro: Japan Snow", url: "tXpXHoDKL64", region: "Japan", rating: 9)
+# Video.create!(title: "", url: "", region: "", rating: )
+
+
+puts 'creating skis..'
  Ski.create!(name: "Head Kore", description: "HEAD’s award-winning KORE series was met with rabid enthusiasm when it debuted last winter, so it makes perfect sense that the brand has added a versatile 99-mm waist width to the family for 2018-19.
   “This ski has no compromises,” commented Adrian Bouthot. “It has a super fun waist width and would be an ideal one ski quiver that excels in a lot of areas.” The Head Kore 99 utilizes the same construction found in the rest of
   the family—lightweight karuba wood, incredibly strong yet thin Graphene, rockered tips and tails with camber underfoot—but in a waist width that’s dreamy in a few inches of fresh or the chopped up crud from last week’s storm", brand: "Head", photo_url: "https://s22867.pcdn.co/wp-content/uploads/2018/09/Kore99-1.png", category: "All-mountain",
