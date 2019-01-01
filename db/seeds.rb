@@ -11,21 +11,52 @@ Ski.destroy_all
 Article.destroy_all
 puts 'creating videos..'
 
-Video.create!(title: "GoPro Snow: Jesper Tjäder's Forest", url: "cXYep0_5qOY", region: "Europe", rating: 3)
-Video.create!(title: "POV Series #1 | The Faction Collective", url: "-4tsX20dPX0", region: "Europe", rating: 5)
-Video.create!(title: "GoPro: Chasing Adventure - Crhis Bentchelter", url: "PNs68O5JSKg", region: "Usa", rating: 5)
-Video.create!(title: "GoPro Ski: Chasing El Niño - ep:2", url: "lZE66YL0V8I", region: "Usa", rating: 5)
-Video.create!(title: "GoPro Ski: Chasing El Niño - ep:3", url: "N5XIWU017kU", region: "Usa", rating: 5)
-Video.create!(title: "GoPro Ski: Chasing El Niño - ep:4", url: "Z1OQbLqtVLE", region: "Usa", rating: 5)
-Video.create!(title: "The Faction Collective Presents: La Grave", url: "QkinG08IoKk", region: "Europe", rating: 5)
-Video.create!(title: "The Faction Collective Presents: British Columbia", url: "k0xxtEqeBog", region: "Europe", rating: 5)
+# always in title puts long titles
+
+Video.create!(title: "GoPro Snow: Jesper Tjäder's Forest", url: "cXYep0_5qOY", region: "Austria", rating: 6)
+Video.create!(title: "POV Series #1 | The Faction Collective", url: "-4tsX20dPX0", region: "France", rating: 8)
+Video.create!(title: "GoPro: Chasing Adventure - Crhis Bentchelter", url: "PNs68O5JSKg", region: "Usa", rating: 10)
+Video.create!(title: "GoPro Ski: Chasing El Niño - ep:2", url: "lZE66YL0V8I", region: "Usa", rating: 9)
+Video.create!(title: "GoPro Ski: Chasing El Niño - ep:3", url: "N5XIWU017kU", region: "Usa", rating: 9)
+Video.create!(title: "GoPro Ski: Chasing El Niño - ep:4", url: "Z1OQbLqtVLE", region: "Usa", rating: 9)
+Video.create!(title: "The Faction Collective Presents: La Grave", url: "QkinG08IoKk", region: "France", rating: 8)
+Video.create!(title: "The Faction Collective Presents: British Columbia", url: "k0xxtEqeBog", region: "Canada", rating: 8)
 Video.create!(title: "THIS IS HOME - Duncan Adams: Athlete Edit", url: "MUw2_EbqOgU", region: "Europe", rating: 5)
-Video.create!(title: "THIS IS HOME - Antti Ollila", url: "9Tv99c2tTMw", region: "Europe", rating: 5)
- puts 'creating skis..'
+Video.create!(title: "THIS IS HOME - Antti Ollila: Athlete Edit", url: "9Tv99c2tTMw", region: "Austria", rating: 5)
+Video.create!(title: "We Are The Faction Collective: Ep02", url: "rGsNEAx7U1I", region: "Usa", rating: 7)
+Video.create!(title: "THIS IS HOME - Utah Segment-Faction skis", url: "q3glYu4IyZI", region: "Usa", rating: 8)
+Video.create!(title: "THIS IS HOME - Extended Cut: Zermatt", url: "u_GnIMxHY7M", region: "Suiza", rating: 8)
+Video.create!(title: "We Are The Faction Collective:Ep01", url: "qp6NV33XAc8", region: "Argentina", rating: 7)
+Video.create!(title: "We Are The Faction Collective:Ep03", url: "MPKdL_E-z7s", region: "Suiza", rating: 7)
+Video.create!(title: "Armada Presents SNOWCIETIES Chamonix", url: "goD_ewMlSj8", region: "France", rating: 8)
+Video.create!(title: "THIS IS HOME - Rough Cut: Finland", url: "Wfwm2P1stK8", region: "Finland", rating: 6)
+Video.create!(title: "Armada Family Profile: Torin Yater-Wallace", url: "vkkiDOSYvRk", region: "Usa", rating: 6)
+Video.create!(title: "GoPro: Tanner Hall Ski Diaries Ep:2", url: "g0FMrjsYAzc", region: "Usa", rating: 8)
+Video.create!(title: "GoPro: Tanner Hall Ski Diaries Ep:1", url: "N2CWCJJilfk", region: "Usa", rating: 7)
+Video.create!(title: "GoPro Line of the Winter: Léo Taillefer", url: "UYmcm5bKvxk", region: "France", rating: 7)
+Video.create!(title: "GoPro Line of the Winter: Nicolas Falquet", url: "EMVPpPE_Bx4", region: "Suiza", rating: 8)
+Video.create!(title: "Eric Pollard & Line Skis Shred Mt Hood", url: "ivG4ZHt5e4c", region: "Usa", rating: 7)
+Video.create!(title: "Introducing the LINE Sakana by Eric Pollard", url: "wBpbZ1aeWtQ", region: "Usa", rating: 5)
+Video.create!(title: "REJOICE: SAMMY CARLSON - Quicksilver trailer", url: "lqdJarUoXow", region: "Usa", rating: 6)
+Video.create!(title: "Few Words Trailer - The Candide Thovex movie", url: "eL2sCAvM29A", region: "France", rating: 8)
+Video.create!(title: "Candide Kamera Episode 2 - Quicksilver", url: "BuL7SSP_dH0", region: "France", rating: 7)
+Video.create!(title: "One of those days - Candide Thovex", url: "ygxufRprWpY", region: "France", rating: 10)
+Video.create!(title: "One of those days 2 - Candide Thovex", url: "yKP7jQknGjs", region: "France", rating: 10)
+Video.create!(title: "One of those days 3 - Candide Thovex", url: "R1NagZN2kjY", region: "France", rating: 9)
+Video.create!(title: "Candide Thovex - quattro 2 - Audi", url: "NHrwcQQ38bA", region: "France", rating: 9)
+Video.create!(title: "Random Shots - Candide Thovex", url: "2aXFPZjCsok", region: "France", rating: 9)
+Video.create!(title: "Few Words - A Candide Thovex Film", url: "cpi2fc5vfNs", region: "France", rating: 9)
+Video.create!(title: "GoPro Ski: Chasing El Niño – Ep. 1 ", url: "hqtDehAtAN8", region: "Usa", rating: 8)
+Video.create!(title: "GoPro: New Zealand Adventure - Chris Bentchelter", url: "aRm-JTO70F0", region: "New_Zeland", rating: 9)
+Video.create!(title: "GoPro: Japan - The Search for Perfection in 4K", url: "tXpXHoDKL64", region: "Japan", rating: 9)
+# Video.create!(title: "", url: "", region: "", rating: )
+
+
+puts 'creating skis..'
  Ski.create!(name: "Head Kore", description: "HEAD’s award-winning KORE series was met with rabid enthusiasm when it debuted last winter, so it makes perfect sense that the brand has added a versatile 99-mm waist width to the family for 2018-19.
   “This ski has no compromises,” commented Adrian Bouthot. “It has a super fun waist width and would be an ideal one ski quiver that excels in a lot of areas.” The Head Kore 99 utilizes the same construction found in the rest of
-  the family—lightweight karuba wood, incredibly strong yet thin Graphene, rockered tips and tails with camber underfoot—but in a waist width that’s dreamy in a few inches of fresh or the chopped up crud from last week’s storm", brand: "Head", photo_url: "https://s22867.pcdn.co/wp-content/uploads/2018/09/Kore99-1.png", category: "All-mountain",
-  price: "699", url: "blizzard-rustler-11#image=122272/511292/blizzard-rustler-11-skis-2018-164.jpg")
+  the family—lightweight karuba wood, incredibly strong yet thin Graphene, rockered tips and tails with camber underfoot—but in a waist width that’s dreamy in a few inches of fresh or the chopped up crud from last week’s storm", brand: "Head", photo_url: "https://s22867.pcdn.co/wp-content/uploads/2018/09/Kore105.png", category: "All-mountain",
+  price: "699", url: "head-kore-99#image=138622/574864/head-kore-99-skis-2019-162.jpg")
 Ski.create!(name: "Blizzard Rustler 11", description: "Adrian Bouthot described the Blizzard Rustler 11 pretty perfectly, stating, “Checks all the boxes for a skier that likes to push the speed barrier everywhere.”
  Blizzard threw a whole lot into the mixing pot to create this high-performance rig.
  A combination of balsa, paulownia, poplar and beech woods in the core cover the bases of dampening, spring, weight savings and rigidity.
@@ -81,10 +112,6 @@ Ski.create!(name: "Nordica Enforcer 110", description: "The Nordica Enforcer 110
  Crud? It eats it for breakfast. Powder? It floats it like a dream. “The essence of fluidity, so smooth from edge to edge,” commented FREESKIER publisher Damian Quigley.
   “One of my all-time favorites; it’s stable, playful, surfy and fun,” added tester Drew Ingardia. Nordica sandwiches a versatile poplar, beech and balsa wood core between two layers of Titanal and a carbon prepreg laminate for a ski that’s smooth in all facets of the game.
   Its rocker-camber-rocker profile makes this race car a dream to handle, too.", brand: "Nordica", photo_url: "https://s22867.pcdn.co/wp-content/uploads/2018/09/Enforcer110.png", category: "Powder", price: "899", url: "nordica-enforcer-110#image=138870/572918/nordica-enforcer-110-skis-2019-169.jpg")
-Ski.create!(name: "Nordica Enforcer 100", description: "Testers experienced pure elation whilst ripping this ski, from firm morning groomers, to midday off-roading through the chop, to late afternoon slush bumps. “It’s unreal,” said one tester plainly. “So smooth and stable. Corners like it’s on rails.”
- Two sheets of metal over the edges complement its beech and poplar core, yielding outstanding power transmission and torsional stability.
-  Considerable camber underfoot guarantees strong edge hold, and blunted, rockered tips and tails make crud busting a cake walk.
-  “Super snappy and responsive. Rips like a World Cup slalom ski.", brand: "Nordica", photo_url: "https://s22867.pcdn.co/wp-content/uploads/2016/08/NordicaEnforcer100.png", category: "All-Mountain", price: "799", url: "nordica-enforcer-100#image=134913/555537/nordica-enforcer-100-skis-2019-169.jpg")
 Ski.create!(name: "Völkl M5 Mantra", description: "The Mantra has been an icon in the all-mountain world since 2005-06.
  The fifth generation Mantra, dubbed the M5, is set to do the same but with a new construction strategy.
   Völkl arranges Titanal around the perimeters of the tip and tail, while also utilizing a carbon inlay in the nose.
@@ -95,7 +122,32 @@ Ski.create!(name: "Völkl 90Eight", description: "The Völkl 90Eight is hot… m
  In addition, Völkl implements multiple layers of folded glass in the binding area to improve responsiveness and power transmission to the edges.
   The end result is a ski that can charge with the best of ’em and isn’t a slouch in the playfulness department, either.
   “These carved trenches around the entire hill,” commented Thomas Lampert. “They were also fun to pop off side hits and ride the tails.” Like we said, these cats are hot.", brand: "Völkl", photo_url: "https://s22867.pcdn.co/wp-content/uploads/2018/09/90Eight.png", category: "All-Mountain", price: "775", url: "volkl-90eight")
+Ski.create!(name: "Völkl Confession Skis", description: "The choice of spine-slaying, big-mountain rider Ian McIntosh, Völkl’s Confession skis are a set of powerful, directional pow slayers, light enough to play with yet sturdy enough to get you down the steepest high-alpine faces with confidence.
+ Utilizing a beech and poplar wood core ensures a sturdy base, while a Titanal band and carbon stringers run through the center of the ski to further increase its strength without adding weight.
+ The Confession’s rocker-camber-rocker profile allows you to carve an edge just as well as smear a turn. “Insane ski. Carve the sh#t out of it or attack the crud. Really impressed with the overall performance of this ski,” commented tester Willie Ford.",
+ brand: "Völkl", photo_url: "https://s22867.pcdn.co/wp-content/uploads/2018/09/Confession.png", category: "Powder", price: "875", url: "volkl-confession#image=140489/572889/volkl-confession-skis-2019-179.jpg")
+Ski.create!(name: "Armada Tracer 118", description: "Armada’s Tracer 118 is designed for the skier who is continually seeking the next high-altitude objective and wants a pair of skis that can handle a multitude of snow conditions. Significant rocker in the tip as well as slight tail rocker keep the Tracer nimble, while camber underfoot ensures great snow contact.
+ Inside the ski, you’ll find a combination of poplar and ash wood in the core reinforced by a layer of woven fiberglass and two strips of Titanal.
+ The result is a reliable ski that holds up on the steepest of descents, while optimizing flex and maneuverability. According to Donny O’Neill, this ski is “more energetic than a gaggle of puppies. Lightweight yet stable; rails turns but is still nimble in trees and bumpy terrain.”",
+ brand: "Armada", photo_url: "https://s22867.pcdn.co/wp-content/uploads/2018/09/Tracer118.png", category: "Powder", price: "950", url: "armada-tracer-118-chx#image=140312/580390/clone.jpg")
+Ski.create!(name: "Salomon QST 118", description: "“Light, light, light like a feather,” said Steve Karczewski. “Take this playful, strong ski anywhere you dream,” noted Sam Taggart.
+ Adrian Bouthot commented that these planks “hug the snow and provide a magic-carpet-like feel. Can and will pop at a moment’s notice and make slalom turns on a dime.”
+ The widest of the QST series, the 118 is a true big-mountain powerhouse, with a fully rockered tip and tail to plow through variable snow conditions, a woven layer of carbon and flax that provides the strength of metal without sacrificing weight, a five-point sidecut for extra maneuverability and a Koroyd insert in the tip and tail for chatter reduction when you’re nuking.",
+ brand: "Salomon", photo_url: "https://s22867.pcdn.co/wp-content/uploads/2018/09/QST118.png", category: "Powder", price: "900", url: "salomon-qst-118#image=139106/573954/salomon-qst-118-skis-2019-171.jpg")
+Ski.create!(name: "K2 Catamaran Skis", description: "When you have the minds of legends like Pep Fujas and Sean Pettit helping to create a ski, you know that 1) It’s meant to surf the deepest of the deep, and 2) It’s playful “AF.”
+ Don’t believe us? Take it from tester Adrian Bouthot, “You can feel Pep and Pettit’s influence on these bad boys. They pop, slash and tap better than most at this size.
+ It’s also super stable and provides an amazing landing platform.” To reflect Pep and Pettit’s sensibilities, K2 employed an asymmetrical shape, an elongated taper on the outside edge, which shortens the uphill ski’s effective edge, allowing for seamless butters and slashes. The ski is also built with denser fir wood over the edges for strength and aspen with carbon stringers down the center to increase liveliness.",
+ brand: "K2", photo_url: "https://s22867.pcdn.co/wp-content/uploads/2018/09/Catamaran.png", category: "Powder", price: "850", url: "k2-catamaran#image=138345/570621/k2-catamaran-skis-2019-177.jpg")
+Ski.create!(name: "Armada Edollo Skis", description: "At the forefront of freestyle skiing, Henrik Harlaut’s signature twigs are back on shelves heading into 2019.
+ Dubbed the Edollo, these skis are “so buttery, I felt my arteries clogging,” explained Russell Wontor. That’s no surprise given their namesake’s signature style of skiing.
+ A wider, 98 mm platform, updated flex pattern with a softer tail and ultra-thick steel edges and base construction make these skis durable, playful, poppy and sturdy, simultaneously. All in all, these are a pair of “butterlicious skis that want to be pressed hard and often, and can still hang on the groomers,” said veteran tester Adrian Bouthot.",
+ brand: "Armada", photo_url: "https://s22867.pcdn.co/wp-content/uploads/2018/09/Edollo.png", category: "Park", price: "700", url: "armada-edollo#image=140332/580357/armada-edollo-skis-2019-164.jpg")
+Ski.create!(name: "Line Tom Wallisch Pro", description: "One of the biggest names in the history of skiing, Tom Wallisch knows what he wants out of his skis: a durable, relatively stiff yet playful set of boards to stand up to the longest urban kink rails and the biggest terrain park features.
+ “I really like the flex on this ski, and the way it skis through rails… a reliable ski from Line,” noted park tester Aidan Sheahan. “Great stiffness for hitting jumps but still playful on the rails,” said Sam Zahner. The latest TW Pro features a symmetrical flex pattern for simple switch skiing, a five-point radius for easy carving and effortless maneuvers and a wood core consisting of two full-length maple stringers surrounded by aspen for increased strength and durability.",
+ brand: "Line", photo_url: "https://s22867.pcdn.co/wp-content/uploads/2018/09/WallischPro.png", category: "Park", price: "550", url: "line-tom-wallisch-pro#image=138265/567857/clone.jpg")
 # Ski.create!(name: "", description: "", brand: "", photo_url: "", category: "", price: "", url: "")
+
+
  puts 'creating articles ..'
 Article.create!(title: "Tof Henry Is The Fastest Skier in Chamonix", subtitle: "He straightlines the Alps’ steepest slopes, yet a turbulent life off the hill might be exacerbating his extreme style.",
  main_article: " Daniel Rönnbäck was standing in the tramline of Chamonix's Aiguille du Midi with the late Andreas Fransson when he first saw Christophe 'Tof' Henry. It was 2012 and Fransson nodded toward the third-generation Chamoniard, whose black mop of hair wisped across his tanned cheeks, and said to Rönnbäck, 'That kid is the next generation of steep skiing. He's the fastest skier in Chamonix.'
