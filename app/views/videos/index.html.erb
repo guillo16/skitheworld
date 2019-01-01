@@ -13,14 +13,15 @@
   <div id = "marcasDiv">
 
     <%= link_to videos_path(region: "Usa") do %><h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;United States</h5><% end %>
-    <%= link_to videos_path(region: "Europe") do %><h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Europe</h5><% end %>
-    <%= link_to videos_path(region: "Canada") do %><h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Canada</h5><% end %>
     <%= link_to videos_path(region: "France") do %><h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;France</h5><% end %>
+    <%= link_to videos_path(region: "Canada") do %><h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Canada</h5><% end %>
+    <%= link_to videos_path(region: "Japan") do %><h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Japan</h5><% end %>
     <div style="display:none;" id="myDIV">
        <%= link_to videos_path(region: "Austria") do %><h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Austria</h5><% end %>
        <%= link_to videos_path(region: "Argentina") do %><h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Argentina</h5><% end %>
        <%= link_to videos_path(region: "Italy") do %><h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Italy</h5><% end %>
        <%= link_to videos_path(region: "New Zeland") do %><h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;New Zeland</h5>
+       <%= link_to videos_path(region: "Suiza") do %><h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Switzerland</h5><% end %>
     </div><% end %>
       <button id="myButton" onClick="myFunction(); toggleText(this.id);">+ More</button>
   </div>
