@@ -4,7 +4,12 @@ class ResortsController < ApplicationController
 
   def index
     @resorts = Resort.all
+    if params["region"]
+      @resorts = Resort.where(region: params["region"])
+    else
+      @resorts
   end
+end
 
   def show
   end

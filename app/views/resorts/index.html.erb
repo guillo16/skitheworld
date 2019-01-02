@@ -1,12 +1,70 @@
 <div class="main-resort-container">
-   <div class="sidebar-resort">
-     <h2> Region</h2>
-     <h4> Colorado</h4>
-     <h4>Utah </h4>
-     <h4> Canada</h4>
-     <h4> Argentina</h4>
-   </div>
-   <div class="resorts">
+  <div class="sidebar-resort">
+
+   <h4> <%= link_to resorts_path do %>
+    <i class="fas fa-globe-americas"></i>All Resorts<% end %></h4>
+
+     <h3><button id="regionButton" onClick="myRegionFunction(); toggleMarcaText(this.id);">Region -</button></h3>
+    <div id = "marcasDiv">
+        <%= link_to resorts_path(region: "Colorado") do %><h5>Colorado</h5><% end %>
+        <%= link_to resorts_path(region: "Wyoming") do %><h5>Wyoming</h5><% end %>
+        <%= link_to resorts_path(region: "Utah") do %><h5>Utah</h5><% end %>
+        <%= link_to resorts_path(region: "Montana") do %><h5>Montana</h5><% end %>
+        <%= link_to resorts_path(region: "Canada") do %><h5>Canada</h5><% end %>
+      <div style="display:none;" id="myDIV">
+        <%= link_to resorts_path(region: "Argentina") do %><h5>Argentina</h5><% end %>
+        <%= link_to resorts_path(region: "France") do %><h5>France</h5><% end %>
+        <%= link_to resorts_path(region: "Japan") do %><h5>Japan</h5><% end %>
+      </div>
+       <button id="myButton" onClick="myFunction(); toggleText(this.id);">+ More</button>
+    </div>
+
+    <script>
+           function myRegionFunction() {
+            let b = document.getElementById("marcasDiv");
+            if (b.style.display === "none")
+            {
+              b.style.display = "block";
+            } else {
+              b.style.display = "none";
+            }
+           }
+           function toggleMarcaText(marcaButton) {
+            if (document.getElementById(marcaButton).innerText == "Region -")
+             {
+                 document.getElementById(marcaButton).innerText = "Region +";
+             }
+             else
+             {
+               document.getElementById(marcaButton).innerText = "Region -";
+             }
+           }
+            function myFunction() {
+            var x = document.getElementById("myDIV");
+            if (x.style.display === "none") {
+              x.style.display = "block";
+            } else {
+              x.style.display = "none";
+            }
+          }
+            function toggleText(button_id)  {
+             if (document.getElementById(button_id).innerText == "+ More")
+             {
+                 document.getElementById(button_id).innerText = "- Less";
+             }
+             else
+             {
+               document.getElementById(button_id).innerText = "+ More";
+             }
+          }
+        </script>
+        <h2> Rating</h2>
+
+  </div>
+
+
+
+  <div class="resorts">
     <% @resorts.each do |resort| %>
     <%= link_to resort_path(resort) do %>
       <div class="resort">
