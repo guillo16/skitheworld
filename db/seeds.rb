@@ -9,6 +9,7 @@ puts 'clearing database..'
 Video.destroy_all
 Ski.destroy_all
 Article.destroy_all
+Resort.destroy_all
 puts 'creating videos..'
 
 # always in title puts long titles
@@ -222,6 +223,13 @@ Article.create!(title: "Fernie’s Fire", subtitle: "Home isn’t always where y
   I was lucky enough to find my fire early. Like many of you, skiing has played the role of guiding star, even when I ignored her nudges. In the end, though, it was the special iridescence of this place that flickered and flamed, and Fernie was the light that guided me home.",
   writer: "Powder Magazine", photo_url: "https://www.snowmagazine.com/media/reviews/photos/original/c9/bd/d4/fernie-resort-53-1386935442.jpg", photo: "https://img4.onthesnow.com/image/gg/37/378177.jpg", second_photo: "https://skinakiska.com/wp-content/uploads/2016/09/Fernie-H-G.jpg")
 # Article.create!(title: "", subtitle: "", main_article: "", second_article: "", writer: "", photo_url: "", photo: "", second_photo: "")
+ puts 'resort created..'
 
+ Resort.create!(name: "Aspen Snowmass", description: "A great place where dreans come true and you can ski all the way form the top of the town and also you can buy a lot of the skis and snowboards in the town
+  also you can go to the center of the town and have some drinks and appetizers you also have a lot of strip clubs where you can spent all yout salary in girls.", photo1: "http://informedenieve.com/wp-content/uploads/2017/09/1-1.jpg", photo2: "https://images.inntopia.com/photos/1650700/1650700-116.jpg", photo3: "https://img4.onthesnow.com/image/gg/14/1_144129.jpg", trail: "https://www.aspensnowmass.com/-/media/aspensnowmass/trail-maps/1718/aspen.ashx", region: "Colorado", tips: "bring a lot of money")
+ Resort.create!(name: "Snowbird", description: " great place where dreans come true and you can ski all the way form the top of the town and also you can buy a lot of the skis and snowboards in the town
+  also you can go to the center of the town and have some drinks", photo1: "https://img1.onthesnow.com/image/xl/91/snowbird_athlete_ben_wheeler_skis_tram_1_91422.jpg", photo2: "https://www.skibacs.org/media/com_eventbooking/images/snowbird_tram.JPG", photo3: "https://www.tetongravity.com/images/ci-images/kickapps/PHOTO_15386278_75233_34540729_ap.jpg",
+   trail: "https://res.cloudinary.com/liftopia/image/upload/c_fit,d_defaults:default_logo_1.png,f_auto,h_980,q_auto,w_980/v1/production/trail_maps/b45d084c2ad69658a44a359e1f950913.jpg", region: "Utah", tips: "very expensive")
+ # Resort.create!(name: "", description: "", photo1: "", photo2: "", photo3: "", trail: "", region: "", tips: "")
 
 puts 'finished.'
