@@ -1,0 +1,23 @@
+<div class="main-resort-container">
+   <div class="sidebar-resort">
+     <h1> hola welcome to resorts</h1>
+   </div>
+   <div class="resorts">
+    <% @resorts.each do |resort| %>
+    <%= link_to resort_path(resort) do %>
+      <div class="resort">
+          <img src="<%= resort.photo1 %>" alt="">
+          <div class="resort-body">
+            <%= resort.name %>
+            <%= resort.description %>
+          </div>
+      </div>
+        <%end%>
+        <%end %>
+    </div>
+
+</div>
+
+
+
+
