@@ -1,0 +1,119 @@
+.main-resort-container {
+  display: flex;
+
+}
+// sidebar (filters)
+.sidebar-resort {
+ flex: 0 0 200px;
+ background-color: #fafafa;
+ height: 100vh;
+
+ h4 {
+  font-size: 20px;
+  font-weight: bold;
+  background-color: grey;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 0px;
+}
+h3 {
+  margin-top: 10px;
+}
+h5 {
+  margin-left: 20px;
+  font-size: 18px;
+}
+
+a {
+  color: black;
+  &:hover {
+    text-decoration: none;
+    color: lightgrey;
+  }
+}
+
+i {
+  margin-left: 12px;
+  margin-right: 6px;
+  color: blue;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+ #regionButton {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    background-color: #fafafa;
+    border-color: #fafafa;
+    word-spacing: 90px;
+    margin-top: 0px;
+
+  }
+
+  #myButton {
+    font-size: 14px;
+    font-weight: bold;
+    color: black;
+    background-color: #fafafa;
+    border-color: #fafafa;
+    margin-left: 20px;
+    margin-bottom: 20px;
+
+  }
+}
+
+// middle content (resorts)
+.resorts {
+  flex-grow: 1;
+  height: 100vh;
+  overflow-y: scroll;
+  a {
+  color: black;
+  &:hover {
+    text-decoration: none;
+  }
+ }
+}
+
+
+.resort {
+ display: flex;
+ margin-top: 30px;
+ border-bottom: solid;
+ border-color: lightgrey;
+ margin-left: 20px;
+ margin-right: 20px;
+  img {
+    width: 300px;
+    height: 200px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+  }
+
+
+}
+
+.resort-body {
+  margin-left: 10px;
+ h3 {
+  font-size: 20px;
+  margin: 0px;
+  font-weight: bold;
+ }
+ h5 {
+  font-size: 15px;
+  margin-top: 15px;
+
+ }
+
+ p {
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 20px;
+ }
+}

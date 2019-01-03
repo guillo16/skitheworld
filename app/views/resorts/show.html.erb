@@ -1,0 +1,67 @@
+
+<div class="container">
+
+<h1></h1>
+
+<section class="carousel-fixed-height">
+    <div id="carousel-fixed-height" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-fixed-height" data-slide-to="0" class=""></li>
+        <li data-target="#carousel-fixed-height" data-slide-to="1" class=""></li>
+        <li data-target="#carousel-fixed-height" data-slide-to="2" class="active"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <!-- NOTE: Bootstrap v4 changes class name to carousel-item -->
+        <div class="item">
+          <div style="background:url('<%= @resort.photo2 %>') center center; background-size:cover;" class="slider-size">
+            <div class="carousel-caption">
+              <h3></h3>
+              <p></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div style="background:url(' <%= @resort.photo1 %>') center center; background-size:cover;" class="slider-size">
+            <div class="carousel-caption">
+              <h3></h3>
+              <p></p>
+            </div>
+          </div>
+        </div>
+        <div class="item active">
+          <!--<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/158072/hearthand.jpg" alt="Third slide">-->
+          <div style="background:url('<%= @resort.photo3 %>') center center; background-size:cover;" class="slider-size">
+            <div class="carousel-caption">
+              <h3></h3>
+              <p></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#carousel-fixed-height" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#carousel-fixed-height" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </section>
+  <!-- /end Carousel Fixed Height -->
+  <div class="resort-content">
+    <h1> <%= @resort.name %> </h1>
+    <p> <%= @resort.description %></p>
+  </div>
+  <div class="trail">
+    <h4>Trail map</h4>
+    <img src="<%= @resort.trail %> " class= "img-responsive" alt="photo">
+  </div>
+  <div class="botton-content">
+    <h4>Wheather</h4>
+    <p> <%= @resort.tips %></p>
+  </div>
+</div>
+
+
+
