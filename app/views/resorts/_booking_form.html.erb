@@ -1,0 +1,11 @@
+<div class="booking-form">
+ <%= simple_form_for [@resort, @booking] do |f| %>
+    <%= f.input :start_date, label: "When?", as: :string, input_html: {required: true, class: "datepicker"} %>
+  </div>
+  <div class="booking-button">
+      <%= f.submit "Book Now", :class => "book-button" %>
+      <% end %>
+  </div>
+    <%= tag("div", data: { bookeddates: @booked_dates } , id: "booked_dates") %>
+
+</div>

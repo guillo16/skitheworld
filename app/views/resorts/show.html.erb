@@ -64,4 +64,11 @@
 </div>
 
 
+ <div class="island-book">
+      <% if user_signed_in? %>
+        <%= render 'resorts/booking_form' %>
+      <% else %>
+         <h2>log in for booking</h2>
+      <% end %>
+    </div>
 
