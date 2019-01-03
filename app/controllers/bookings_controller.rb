@@ -26,7 +26,7 @@ class BookingsController < ApplicationController
         requested_end_date = requested_date_range.last.to_date
       end
       @booking.resort = @resort
-      @booking.user = current_user
+      # @booking.user = current_user
 
       if @resort.available?(requested_start_date, requested_end_date)
         @booking.start_date = requested_start_date

@@ -10,4 +10,6 @@ class Booking < ApplicationRecord
   def end_date_after_start_date
     errors.add(:end_date, "can't be before your start date!") if end_date <= start_date
   end
+
+
 end
