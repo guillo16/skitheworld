@@ -15,16 +15,16 @@
         <div class="item">
           <div style="background:url('<%= @resort.photo2 %>') center center; background-size:cover;" class="slider-size">
             <div class="carousel-caption">
-              <h3><%= @resort.name %></h3>
-              <p><%= @resort.tips %></p>
+              <h3></h3>
+              <p></p>
             </div>
           </div>
         </div>
         <div class="item">
           <div style="background:url(' <%= @resort.photo1 %>') center center; background-size:cover;" class="slider-size">
             <div class="carousel-caption">
-              <h3><%= @resort.name %></h3>
-              <p><%= @resort.tips %></p>
+              <h3></h3>
+              <p></p>
             </div>
           </div>
         </div>
@@ -32,8 +32,8 @@
           <!--<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/158072/hearthand.jpg" alt="Third slide">-->
           <div style="background:url('<%= @resort.photo3 %>') center center; background-size:cover;" class="slider-size">
             <div class="carousel-caption">
-              <h3><%= @resort.name %></h3>
-              <p><%= @resort.tips %></p>
+              <h3></h3>
+              <p></p>
             </div>
           </div>
         </div>
@@ -49,14 +49,18 @@
     </div>
   </section>
   <!-- /end Carousel Fixed Height -->
- <div class="resort-content">
-  <p> <%= @resort.description %></p>
- </div>
-
- <div class="trail">
-
-   <img src="<%= @resort.trail %> " class= "img-responsive" alt="photo">
- </div>
+  <div class="resort-content">
+    <h1> <%= @resort.name %> </h1>
+    <p> <%= @resort.description %></p>
+  </div>
+  <div class="trail">
+    <h4>Trail map</h4>
+    <img src="<%= @resort.trail %> " class= "img-responsive" alt="photo">
+  </div>
+  <div class="botton-content">
+    <h4>Wheather</h4>
+    <p> <%= @resort.tips %></p>
+  </div>
 </div>
 
 

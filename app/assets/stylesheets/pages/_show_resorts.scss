@@ -4,17 +4,31 @@
 }
 
 .carousel-caption {
-
-    h3 {
-      font-weight: bold;
-      color: white;
-      font-size: 30px;
-    }
+// may be put some famous prhaise of the resort.
 
 }
 
-.trail {
 
+
+.resort-content {
+  border-bottom: 4px solid;
+   h1 {
+    font-weight: bold;
+    text-align: center;
+  }
+  p {
+    text-align: center;
+    font-size: 15px;
+  }
+}
+.trail {
+ margin-top: 50px;
+
+  h4 {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 50px;
+  }
 
   img {
     border-radius: 6px;
@@ -22,5 +36,17 @@
     display: block;
     margin: 0 auto;
 
+  }
+}
+
+.botton-content {
+  text-align: center;
+  p {
+    font-size: 15px;
+  }
+  h4 {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px;
   }
 }
