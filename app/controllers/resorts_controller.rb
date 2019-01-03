@@ -12,6 +12,13 @@ class ResortsController < ApplicationController
 end
 
   def show
+    @booking = Booking.new
+
+    @booked_date = []
+
+    @resort.bookings.each do |booking|
+      @booked_date << { from: booking.start_date, to: booking.end_date }
+    end
   end
 
   private

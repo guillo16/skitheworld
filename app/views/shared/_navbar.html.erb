@@ -36,8 +36,8 @@
         <div class="dropdown">
           <button class="dropbtn">Ski Resorts <i class="fas fa-angle-down"></i></button>
           <div class="dropdown-content">
-            <h5><%= link_to root_path(created_at: :desc) do %>Novedades<% end %></h5>
-            <h5>  <%= link_to root_path(price_cents: :desc) do %>Mas alto - Mas bajo<% end %></h5>
+            <h5><%= link_to resorts_path do %>
+              Resorts<% end %></h5>
           </div>
         </div>
 
@@ -50,8 +50,8 @@
           <button class="dropbtn">
           <%= image_tag "logo.png", class: "avatar dropdown-toggle", id: "navbar-wagon-menu", "data-toggle" => "dropdown" %> </button>
             <div class="dropdown-content">
-              <%= link_to "#" do %>
-                <i class="fa fa-user"></i> <%= t(".profile", default: "Profile") %>
+              <%= link_to bookings_path do %>
+                <i class="fa fa-book"></i> Bookings
               <% end %>
               <%= link_to destroy_user_session_path, method: :delete do %>
                 <i class="fas fa-sign-out-alt"></i> <%= t(".sign_out", default: "Log out") %>
@@ -71,7 +71,7 @@
     <div class="dropdown">
       <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
       <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
-        <li><%= link_to root_path do %><i class="fas fa-screwdriver"></i> Productos</li>
+        <li><%= link_to bookings_path do %><i class="fas fa-book"></i> Bookings</li>
         <% end %>
         <li><%= link_to destroy_user_session_path, method: :delete do %>
                 <i class="fas fa-sign-out-alt"></i> <%= t(".sign_out", default: "Log out") %>

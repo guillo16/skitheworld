@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_01_02_211316) do
+ActiveRecord::Schema.define(version: 2019_01_03_182515) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -26,6 +26,17 @@ ActiveRecord::Schema.define(version: 2019_01_02_211316) do
     t.string "second_photo"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "bookings", force: :cascade do |t|
+    t.date "start_date"
+    t.date "end_date"
+    t.bigint "resort_id"
+    t.bigint "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["resort_id"], name: "index_bookings_on_resort_id"
+    t.index ["user_id"], name: "index_bookings_on_user_id"
   end
 
   create_table "resorts", force: :cascade do |t|
@@ -74,4 +85,6 @@ ActiveRecord::Schema.define(version: 2019_01_02_211316) do
     t.datetime "updated_at", null: false
   end
 
+  add_foreign_key "bookings", "resorts"
+  add_foreign_key "bookings", "users"
 end
