@@ -1,3 +1,6 @@
+
+
+
 <div class="main-resort-container">
   <div class="sidebar-resort">
 
@@ -65,6 +68,12 @@
 
 
   <div class="resorts">
+    <div
+  id="map"
+  style="width: 90%;
+  height: 500px;"
+  data-markers="<%= @markers.to_json %>"
+></div>
     <% @resorts.each do |resort| %>
     <%= link_to resort_path(resort) do %>
       <div class="resort">
