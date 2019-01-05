@@ -34,6 +34,15 @@
       border-bottom-color: white;
     }
   }
+
+  a {
+    color: white;
+    &:hover {
+      text-decoration: none;
+      color: rgba(255,255,255, 0.8)
+    }
+
+  }
 }
 
 .main-ski-container {
