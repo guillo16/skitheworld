@@ -73,6 +73,14 @@
       <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
         <li><%= link_to bookings_path do %><i class="fas fa-book"></i> Bookings</li>
         <% end %>
+          <li><%= link_to articles_path do %><i class="fas fa-newspaper"></i> Articles</li>
+        <% end %>
+        <li><%= link_to resorts_path do %><i class="fas fa-mountain"></i> Resorts</li>
+        <% end %>
+        <li><%= link_to videos_path do %><i class="fas fa-video"></i> Videos</li>
+        <% end %>
+        <li><%= link_to skis_path do %><i class="fas fa-trophy"></i> Gear</li>
+        <% end %>
         <li><%= link_to destroy_user_session_path, method: :delete do %>
                 <i class="fas fa-sign-out-alt"></i> <%= t(".sign_out", default: "Log out") %>
               <% end %></li>
@@ -85,7 +93,13 @@
       <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
       <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
         <li><%= link_to t(".sign_in", default: "Iniciar Sesion"), new_user_session_path, class: "navbar-wagon-item navbar-wagon-link" %></li>
-         <li><%= link_to root_path do %>Productos <i class="fas fa-wrench"></i> </li>
+         <li><%= link_to articles_path do %><i class="fas fa-newspaper"></i> Articles</li>
+        <% end %>
+        <li><%= link_to resorts_path do %><i class="fas fa-mountain"></i> Resorts</li>
+        <% end %>
+        <li><%= link_to videos_path do %><i class="fas fa-video"></i> Videos</li>
+        <% end %>
+        <li><%= link_to skis_path do %><i class="fas fa-trophy"></i> Gear</li>
         <% end %>
       </ul>
       <% end %>
