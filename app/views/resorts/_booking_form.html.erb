@@ -2,11 +2,9 @@
  <%= simple_form_for [@resort, @booking] do |f| %>
     <%= f.input :start_date, label: "Check-in", as: :string, input_html: {required: true, id: "start_date"} %>
     <%= f.input :end_date, label: "Check-out", as: :string, input_html: {required: true, id: "end_date"} %>
-
-  <div class="booking-button">
+    <div class="booking-button">
       <%= f.submit "Book Now", :class => "book-button" %>
-      <% end %>
-  </div>
-    <%= tag("div", data: { bookeddates: @booked_dates } , id: "booked_dates") %>
-
+    </div>
+  <% end %>
+  <% tag("div", data: { bookeddates: @booked_dates } , id: "booked_dates") %>
 </div>
