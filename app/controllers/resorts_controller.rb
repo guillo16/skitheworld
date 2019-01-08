@@ -20,8 +20,8 @@ class ResortsController < ApplicationController
       @resorts = Resort.where(region: params["region"])
     else
       @resorts
+    end
   end
-end
 
   def show
     @booking = Booking.new

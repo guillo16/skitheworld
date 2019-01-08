@@ -14,33 +14,11 @@ class BookingsController < ApplicationController
   end
 
   def create
-    if params[:booking][:start_date] == "" || params[:booking][:start_date].nil?
-      redirect_to resort_path(@resort)
-    else
-      if !params[:booking][:start_date].include?("to")
-        requested_start_date = params[:booking][:start_date].to_date
-        requested_end_date = requested_start_date
-      else
-        requested_date_range = params[:booking][:start_date].split(" to ")
-        requested_start_date = requested_date_range.first.to_date
-        requested_end_date = requested_date_range.last.to_date
-      end
-      @booking.resort = @resort
-      # @booking.user = current_user
-
-      if @resort.available?(requested_start_date, requested_end_date)
-        @booking.start_date = requested_start_date
-        @booking.end_date = requested_end_date
-        @booking.save
-        redirect_to booking_path(@booking) if @booking.save
-        redirect_to resort_path(@resort) if @booking.save == false
-        flash[:alert] = "The dates of your booking are invalid." if @booking.save == false
-      else
-        redirect_to resort_path(@resort)
-        flash[:alert] = "The resort is not available on these dates."
-      end
+    @booking = Booking.new(booking_params)
+    @booking.resort = @resort
+    return redirect_to @booking if @booking.save
+    render "resorts/show"
   end
-end
 
   def destroy
     @booking = Booking.find(params[:id])
