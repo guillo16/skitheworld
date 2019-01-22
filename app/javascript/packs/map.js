@@ -1,16 +1,24 @@
-import GMaps from 'gmaps/gmaps.js';
+import 'mapbox-gl/dist/mapbox-gl.css'
+import mapboxgl from 'mapbox-gl/dist/mapbox-gl.js';
 
-const mapElement = document.getElementById('map');
-if (mapElement) { // don't try to build a map if there's no div#map to inject in
-  const map = new GMaps({ el: '#map', lat: 0, lng: 0 });
-  const markers = JSON.parse(mapElement.dataset.markers);
-  map.addMarkers(markers);
-  if (markers.length === 0) {
-    map.setZoom(2);
-  } else if (markers.length === 1) {
-    map.setCenter(markers[0].lat, markers[0].lng);
-    map.setZoom(14);
-  } else {
-    map.fitLatLngBounds(markers);
+
+  const mapElement = document.getElementById('map');
+
+  if (mapElement) { // only build a map if there's a div#map to inject into
+    mapboxgl.accessToken = process.env.MAPBOX_API_KEY;
+    const map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/mapbox/streets-v10'
+    });
+
+    const markers = JSON.parse(mapElement.dataset.markers);
+
+    markers.forEach((marker) => {
+      new mapboxgl.Marker()
+        .setLngLat([marker.lng, marker.lat])
+        .addTo(map);
+    })
   }
-}
+
+
+
