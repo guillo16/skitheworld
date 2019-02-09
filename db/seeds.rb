@@ -230,7 +230,7 @@ The variety of terrain is enough to keep skiers and snowboarders of any ability 
 Aspen Mountain:
 Aspen Mountain’s eight lifts rise straight out of the town of Aspen. These chairlifts and one gondola serve intermediate and advanced terrain only, with lots of great glades to explore. The ski area is rather narrow from side to side, with most of the best terrain located on the sides of the ridges, like the steep glades off of the Ridge of Bell under the gondola. Farther out on the peripheries, skiers and snowboarders can find powder stashes left long after snowstorms. Check out the terrain off of Gentleman's Ridge and Traynor’s Ridge. At 675 skiable acres Aspen Mountain is quite small, only a fifth of the size of Snowmass.
 
-</strong>Snowmass:</strong>
+Snowmass:
 With over 150 miles of trails and 4,400' vertical, Snowmass claims “you can spend your entire trip skiing and riding its terrain without covering the same ground twice.” The huge mountain has some of the best beginner skiing and snowboarding in Colorado, as well as some of the best powder terrain in Aspen. The entire lower mountain is dedicated to beginners and intermediates. This is awesome for those skiers and snowboarders who are just learning, but still want to explore. The Powerline Glades are widely spaced, and a nice option for intermediates looking to venture off piste and get a taste of powder riding. Up on the High Alpine and Cirque lifts there are plenty of options and powder stashes for advanced and expert skiers and snowboarders to explore. Powder lasts the longest far to the skier’s right of the mountain in the Burnt Mountain Glades.
 
 Buttermilk:
